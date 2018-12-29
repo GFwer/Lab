@@ -1,29 +1,7 @@
-# hello-vue
+＃　Lab
 
-## Project setup
-```
-yarn install
-```
+＃＃　アバウト
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+あの、これわ何ですが？？
 
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ごめん、俺わも知らないだよ！
