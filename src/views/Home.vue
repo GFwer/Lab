@@ -44,7 +44,7 @@ export default {
   right: 0;
   bottom: 0;
   z-index: 2;
-  height: 100vh;
+  width: 100vw;
   margin: 0 auto;
 }
 </style>
