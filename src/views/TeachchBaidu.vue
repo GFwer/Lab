@@ -122,6 +122,8 @@ export default {
     }
   },
   mounted: function() {
+    const image = new Image();
+    image.src = "../assets/baidu.jpeg";
     this.searchAnimate();
   },
 
