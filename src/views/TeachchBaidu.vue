@@ -38,25 +38,26 @@
 </template>
 
 <script>
-import TWEEN from "@tweenjs/tween.js";
+import TWEEN from '@tweenjs/tween.js';
+
 export default {
-  name: "TeachBaidu",
-  data: function() {
+  name: 'TeachBaidu',
+  data() {
     return {
       search: this.$route.params.search,
       searchValueFrom: {
-        searchValue: ""
+        searchValue: '',
       },
-      searchAnimateValue: ""
+      searchAnimateValue: '',
     };
   },
   methods: {
     submitForm(formName) {
-      this.$refs[formName].validate(valid => {
+      this.$refs[formName].validate((valid) => {
         if (valid) {
           this.$router.push({
-            name: "teachBaidu",
-            params: { search: this.searchValueFrom.searchValue }
+            name: 'teachBaidu',
+            params: { search: this.searchValueFrom.searchValue },
           });
         } else {
           return false;
@@ -69,7 +70,7 @@ export default {
     searchAnimate() {
       if (this.search) {
         this.mouse();
-        let searchArray = Array.from(this.search);
+        const searchArray = Array.from(this.search);
         searchArray.map((elem, index) => {
           setTimeout(() => {
             this.searchAnimateValue += elem;
@@ -79,35 +80,35 @@ export default {
       }
     },
     openBaidu() {
-      window.open(`//www.baidu.com/s?wd=${this.search}`, "_self");
+      window.open(`//www.baidu.com/s?wd=${this.search}`, '_self');
     },
     mouse() {
       const vm = this;
       const m = this.$refs.mouse;
       const position = this.$refs.animate.$el.getBoundingClientRect();
 
-      var coords = { x: 0, y: 0 };
-      var tween = new TWEEN.Tween(coords)
+      const coords = { x: 0, y: 0 };
+      const tween = new TWEEN.Tween(coords)
         .to({ x: position.x + 4, y: position.y + 10 }, 1000)
         .easing(TWEEN.Easing.Quadratic.Out)
-        .onUpdate(function() {
+        .onUpdate(() => {
           m.style.setProperty(
-            "transform",
-            "translate(" + coords.x + "px, " + coords.y + "px)"
+            'transform',
+            `translate(${coords.x}px, ${coords.y}px)`,
           );
         })
         .start();
-      var coords2 = { x: position.x + 4, y: position.y + 10 };
+      const coords2 = { x: position.x + 4, y: position.y + 10 };
 
-      var tween2 = new TWEEN.Tween(coords2)
+      const tween2 = new TWEEN.Tween(coords2)
         .to({ x: position.x + position.width + 20, y: position.y + 10 }, 1000)
         .delay(this.search.length * 300 + 1000)
         .easing(TWEEN.Easing.Quadratic.Out)
 
-        .onUpdate(function() {
+        .onUpdate(() => {
           m.style.setProperty(
-            "transform",
-            "translate(" + coords2.x + "px, " + coords2.y + "px)"
+            'transform',
+            `translate(${coords2.x}px, ${coords2.y}px)`,
           );
         })
         .start();
@@ -119,11 +120,11 @@ export default {
     animate() {
       requestAnimationFrame(this.animate);
       TWEEN.update();
-    }
+    },
   },
-  mounted: function() {
+  mounted() {
     const image = new Image();
-    image.src = "../assets/baidu.jpeg";
+    image.src = '../assets/baidu.jpeg';
     this.searchAnimate();
   },
 
@@ -133,8 +134,8 @@ export default {
       setTimeout(() => {
         this.searchAnimate();
       }, 200);
-    }
-  }
+    },
+  },
 };
 </script>
 

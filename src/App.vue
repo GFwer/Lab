@@ -1,7 +1,7 @@
 <template>
   <div class="Fawen">
     <el-header>
-      <NavHeader />
+      <NavHeader/>
     </el-header>
     <!-- <div id="nav">
       <router-link to="/">Home</router-link>|
@@ -9,7 +9,7 @@
       <router-link to="/fError">fError</router-link>
     </div>-->
     <el-container class="main-container">
-      <router-view />
+      <router-view/>
     </el-container>
     <el-footer class="footer">
       <div>All for fun!~</div>
@@ -23,13 +23,13 @@
   </div>
 </template>
 <script>
-import NavHeader from "./components/NavHeader.vue";
+import NavHeader from './components/NavHeader.vue';
+
 export default {
   components: {
-    NavHeader
-  }
+    NavHeader,
+  },
 };
-
 </script>
 <style lang="less">
 html {
@@ -53,15 +53,8 @@ html {
     box-sizing: border-box;
   }
 
-  font-family: "Helvetica Neue",
-  Helvetica,
-  "PingFang SC",
-  "Hiragino Sans GB",
-  "Microsoft YaHei",
-  "微软雅黑",
-  Arial,
-  sans-serif;
-
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 
 #app {
@@ -81,7 +74,7 @@ html {
   padding: 10px 0px;
   font-size: small;
 
-  >a {
+  > a {
     text-decoration: none;
     color: #409fff;
     opacity: 0.2;
@@ -91,5 +84,4 @@ html {
 .main-container {
   flex: 1;
 }
-
 </style>

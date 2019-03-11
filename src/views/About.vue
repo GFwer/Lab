@@ -17,16 +17,16 @@
 </template>
 
 <script>
-import Tilt from "vanilla-tilt";
+import Tilt from 'vanilla-tilt';
 
 export default {
-  name: "About",
+  name: 'About',
   components: {},
 
   methods: {},
-  mounted: function() {
-    Tilt.init(document.querySelector(".about-name"));
-  }
+  mounted() {
+    Tilt.init(document.querySelector('.about-name'));
+  },
 };
 </script>
 
@@ -56,4 +56,3 @@ export default {
   }
 }
 </style>
-

@@ -16,23 +16,23 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
-  name: "FError",
+  name: 'FError',
   components: {
-    HelloWorld
+    HelloWorld,
   },
-  data: function() {
+  data() {
     return {
-      bgShow: false
+      bgShow: false,
     };
   },
   methods: {
     open() {
-      this.$message.error("你玩大了兄弟");
-    }
-  }
+      this.$message.error('你玩大了兄弟');
+    },
+  },
 };
 </script>
 
