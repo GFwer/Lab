@@ -1,19 +1,17 @@
 <template>
   <div class="home">
-    <router-link to="/fError">fError</router-link>
-    <router-link to="/teachBaidu">让我来教你怎么百度</router-link>
+    <router-link to="/fError">FError</router-link>
+    <router-link to="/teachBaidu">Let me Baidu for you</router-link>
+    <router-link to="/yearProgress">Year Progress</router-link>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
-  name: 'home',
-  components: {
-    HelloWorld,
-  },
+  name: "home",
+  components: {}
 };
 </script>
 

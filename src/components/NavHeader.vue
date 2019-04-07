@@ -8,20 +8,20 @@
 
 <script>
 export default {
-  name: 'NavHeader',
+  name: "NavHeader",
   methods: {
     handleSelect(key) {
       this.$router.push(key);
-    },
+    }
   },
   data() {
     return {
-      menu: [{ name: '主页', url: '/' }, { name: '关于', url: '/about' }],
-      active: location.pathname,
+      menu: [{ name: "主页", url: "/" }, { name: "关于", url: "/about" }],
+      active: location.pathname
     };
   },
   created() {},
-  beforeCreate() {},
+  beforeCreate() {}
 };
 </script>
 

@@ -4,6 +4,7 @@ import Home from './views/Home.vue';
 import FError from './views/FError.vue';
 import TeachBaidu from './views/TeachchBaidu.vue';
 import About from './views/About.vue';
+import YearProgress from './views/YearProgress.vue'
 
 Vue.use(Router);
 
@@ -31,5 +32,10 @@ export default new Router({
       name: 'teachBaidu',
       component: TeachBaidu,
     },
+    {
+      path: '/yearProgress',
+      name: 'yearProgress',
+      component: YearProgress,
+    }
   ],
 });
