@@ -3,6 +3,7 @@
     <router-link to="/fError">FError</router-link>
     <router-link to="/teachBaidu">Let me Baidu for you</router-link>
     <router-link to="/yearProgress">Year Progress</router-link>
+    <router-link to="/wechatGroupAnalyse">Wechat-Group-Analyse</router-link>
   </div>
 </template>
 

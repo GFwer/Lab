@@ -4,7 +4,8 @@ import Home from './views/Home.vue';
 import FError from './views/FError.vue';
 import TeachBaidu from './views/TeachchBaidu.vue';
 import About from './views/About.vue';
-import YearProgress from './views/YearProgress.vue'
+import YearProgress from './views/YearProgress.vue';
+import WeChatGroupAnalyse from './views/WeChat-Group-Analyse.vue';
 
 Vue.use(Router);
 
@@ -36,6 +37,11 @@ export default new Router({
       path: '/yearProgress',
       name: 'yearProgress',
       component: YearProgress,
-    }
+    },
+    {
+      path: '/wechatGroupAnalyse',
+      name: 'wechatGroupAnalyse',
+      component: WeChatGroupAnalyse,
+    },
   ],
 });

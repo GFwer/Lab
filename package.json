@@ -11,13 +11,17 @@
     "@tweenjs/tween.js": "^17.2.0",
     "countup.js": "^2.0.4",
     "docsify-cli": "^4.3.0",
+    "echarts": "^4.2.1",
     "element-ui": "^2.4.11",
+    "lodash": "^4.17.11",
     "moment": "^2.24.0",
     "register-service-worker": "^1.5.2",
     "vanilla-tilt": "^1.6.1",
     "vue": "^2.5.17",
     "vue-countup-v2": "^3.0.1",
+    "vue-echarts": "^4.0.1",
     "vue-router": "^3.0.1",
+    "vue-scroll-reveal": "^1.0.11",
     "vuex": "^3.0.1"
   },
   "devDependencies": {

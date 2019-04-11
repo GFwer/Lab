@@ -3125,6 +3125,13 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
+echarts@^4.2.1:
+  version "4.2.1"
+  resolved "http://registry.npm.taobao.org/echarts/download/echarts-4.2.1.tgz#9a8ea3b03354f86f824d97625c334cf16965ef03"
+  integrity sha1-mo6jsDNU+G+CTZdiXDNM8Wll7wM=
+  dependencies:
+    zrender "4.0.7"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/ee-first/download/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -4887,6 +4894,18 @@ is-directory@^0.3.1:
   resolved "http://registry.npm.taobao.org/is-directory/download/is-directory-0.3.1.tgz#61339b6f2475fc772fd9c9d83f5c8575dc154ae1"
   integrity sha1-YTObbyR1/Hcv2cnYP1yFddwVSuE=
 
+is-dom-node-list@^1.2.1:
+  version "1.2.1"
+  resolved "http://registry.npm.taobao.org/is-dom-node-list/download/is-dom-node-list-1.2.1.tgz#141ded0c66de759d0976800d21370bb908f2950f"
+  integrity sha1-FB3tDGbedZ0JdoANITcLuQjylQ8=
+  dependencies:
+    is-dom-node "^1.0.4"
+
+is-dom-node@^1.0.4:
+  version "1.0.4"
+  resolved "http://registry.npm.taobao.org/is-dom-node/download/is-dom-node-1.0.4.tgz#abb18af7133f1e687610cfeb274da1ced342f1c5"
+  integrity sha1-q7GK9xM/Hmh2EM/rJ02hztNC8cU=
+
 is-dotfile@^1.0.0:
   version "1.0.3"
   resolved "http://registry.npm.taobao.org/is-dotfile/download/is-dotfile-1.0.3.tgz#a6a2f32ffd2dfb04f5ca25ecd0f6b83cf798a1e1"
@@ -5818,6 +5837,11 @@ minipass@^2.2.1, minipass@^2.3.4:
   dependencies:
     safe-buffer "^5.1.2"
     yallist "^3.0.0"
+
+miniraf@1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/miniraf/download/miniraf-1.0.0.tgz#5d88e108bbdcb55b4a2ff3da337f24a13a3377e1"
+  integrity sha1-XYjhCLvctVtKL/PaM38koTozd+E=
 
 minizlib@^1.1.1:
   version "1.2.1"
@@ -7460,6 +7484,11 @@ relateurl@0.2.x:
   resolved "http://registry.npm.taobao.org/relateurl/download/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
 
+rematrix@0.3.0:
+  version "0.3.0"
+  resolved "http://registry.npm.taobao.org/rematrix/download/rematrix-0.3.0.tgz#4f3f9156aa80ded8a8ca23785f48c6012b6dea4a"
+  integrity sha1-Tz+RVqqA3tioyiN4X0jGAStt6ko=
+
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/remove-trailing-separator/download/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
@@ -7555,6 +7584,11 @@ requires-port@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/requires-port/download/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
+
+resize-detector@^0.1.9:
+  version "0.1.10"
+  resolved "http://registry.npm.taobao.org/resize-detector/download/resize-detector-0.1.10.tgz#1da3f961aa5f914ccbcfd3752d52fd45beeb692c"
+  integrity sha1-HaP5YapfkUzLz9N1LVL9Rb7raSw=
 
 resize-observer-polyfill@^1.5.0:
   version "1.5.1"
@@ -7714,6 +7748,15 @@ schema-utils@^1.0.0:
     ajv "^6.1.0"
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
+
+scrollreveal@^4.0.2:
+  version "4.0.5"
+  resolved "http://registry.npm.taobao.org/scrollreveal/download/scrollreveal-4.0.5.tgz#cf83cc5d9874dc0d92ef9c89a8894e57f3f8e034"
+  integrity sha1-z4PMXZh03A2S75yJqIlOV/P44DQ=
+  dependencies:
+    miniraf "1.0.0"
+    rematrix "0.3.0"
+    tealight "0.3.6"
 
 select-hose@^2.0.0:
   version "2.0.0"
@@ -8369,6 +8412,14 @@ tar@^4:
     safe-buffer "^5.1.2"
     yallist "^3.0.2"
 
+tealight@0.3.6:
+  version "0.3.6"
+  resolved "http://registry.npm.taobao.org/tealight/download/tealight-0.3.6.tgz#14c8071ce3c188972a5cb7d8a5668ca2820b4292"
+  integrity sha1-FMgHHOPBiJcqXLfYpWaMooILQpI=
+  dependencies:
+    is-dom-node "^1.0.4"
+    is-dom-node-list "^1.2.1"
+
 term-size@^1.2.0:
   version "1.2.0"
   resolved "http://registry.npm.taobao.org/term-size/download/term-size-1.2.0.tgz#458b83887f288fc56d6fffbfad262e26638efa69"
@@ -8865,6 +8916,14 @@ vue-countup-v2@^3.0.1:
   dependencies:
     lodash-es latest
 
+vue-echarts@^4.0.1:
+  version "4.0.1"
+  resolved "http://registry.npm.taobao.org/vue-echarts/download/vue-echarts-4.0.1.tgz#3d3a14f53119701bba09545a68b17cf0689cad29"
+  integrity sha1-PToU9TEZcBu6CVRaaLF88GicrSk=
+  dependencies:
+    lodash "^4.17.11"
+    resize-detector "^0.1.9"
+
 vue-eslint-parser@^2.0.3:
   version "2.0.3"
   resolved "http://registry.npm.taobao.org/vue-eslint-parser/download/vue-eslint-parser-2.0.3.tgz#c268c96c6d94cfe3d938a5f7593959b0ca3360d1"
@@ -8906,9 +8965,16 @@ vue-loader@^15.6.4:
     vue-style-loader "^4.1.0"
 
 vue-router@^3.0.1:
-  version "3.0.2"
-  resolved "http://registry.npm.taobao.org/vue-router/download/vue-router-3.0.2.tgz#dedc67afe6c4e2bc25682c8b1c2a8c0d7c7e56be"
-  integrity sha1-3txnr+bE4rwlaCyLHCqMDXx+Vr4=
+  version "3.0.3"
+  resolved "http://registry.npm.taobao.org/vue-router/download/vue-router-3.0.3.tgz#370ca607475c45a1cfab2d9d2ac846feab1c534c"
+  integrity sha1-NwymB0dcRaHPqy2dKshG/qscU0w=
+
+vue-scroll-reveal@^1.0.11:
+  version "1.0.11"
+  resolved "http://registry.npm.taobao.org/vue-scroll-reveal/download/vue-scroll-reveal-1.0.11.tgz#c2b0b78eff0d65381ba0bbce0d8801023aac649b"
+  integrity sha1-wrC3jv8NZTgboLvODYgBAjqsZJs=
+  dependencies:
+    scrollreveal "^4.0.2"
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
@@ -9428,3 +9494,8 @@ yorkie@^2.0.0:
     is-ci "^1.0.10"
     normalize-path "^1.0.0"
     strip-indent "^2.0.0"
+
+zrender@4.0.7:
+  version "4.0.7"
+  resolved "http://registry.npm.taobao.org/zrender/download/zrender-4.0.7.tgz#15ae960822f5efed410995d37e5107fe3de10e6d"
+  integrity sha1-Fa6WCCL17+1BCZXTflEH/j3hDm0=
