@@ -2,6 +2,6 @@
 
 ## アバウト
 
-あの、これわ何ですが？？
+[![Build Status](https://travis-ci.org/GFwer/Lab.svg?branch=master)](https://travis-ci.org/GFwer/Lab)
 
-ごめん、俺わも知らないす！
+？？？？？

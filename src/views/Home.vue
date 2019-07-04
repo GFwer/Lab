@@ -1,50 +1,34 @@
 <template>
   <div class="home">
-    <HelloWorld msg="冯浩铭错了！！！"/>
-    <transition name="el-zoom-in-center">
-      <img
-        src="@/assets/loading.jpg"
-        alt
-        class="background"
-        v-show="bgShow"
-        v-on:click="bgShow=!bgShow;"
-      >
-    </transition>
-    <el-button v-on:click="bgShow=!bgShow;open();">Suprise~</el-button>
+    <router-link to="/fError">FError</router-link>
+    <router-link to="/teachBaidu">Let me Baidu for you</router-link>
+    <router-link to="/yearProgress">Year Progress</router-link>
+    <router-link to="/wechatGroupAnalyse">Wechat-Group-Analyse</router-link>
+    <router-link to="/echarts">Echarts</router-link>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
-  name: "home",
-  components: {
-    HelloWorld
-  },
-  data: function() {
-    return {
-      bgShow: false
-    };
-  },
-  methods: {
-    open() {
-      this.$message.error("你玩大了兄弟");
-    }
-  }
+  name: "home"
 };
 </script>
 
 <style lang="less">
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  width: 100vw;
+.home {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  > a {
+    margin: 10px;
+    text-align: center;
+  }
+}
+a {
+  text-decoration: none;
+  color: #409fff;
 }
 </style>
