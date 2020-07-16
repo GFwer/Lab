@@ -12,7 +12,7 @@
     "countup.js": "^2.0.4",
     "echarts": "^4.2.1",
     "element-ui": "^2.10.1",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.19",
     "moment": "^2.24.0",
     "register-service-worker": "^1.5.2",
     "vanilla-tilt": "^1.7.0",
